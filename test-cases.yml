@@ -33,7 +33,7 @@ summary: |
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps:
-    - вводи в форму поиска любой товар  
+    - вводи на русском языке в форму поиска айфон 9 
   expected-result: |
     Появится искомый товар  
 ---
