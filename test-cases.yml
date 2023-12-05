@@ -92,9 +92,9 @@ requirement: |
   test-data: |
      https://hexlet-products-store.vercel.app/
   steps:
-    - отметить галочкой производителя Apple
+    - отметить галочкой производителя Apple,samsung,huawei
   expected-result: |
-    Появится список товаров от производителя apple  
+    Появится список товаров от производителя Apple,samsung,huawei 
     ---
  summary: |
     Кнопка "В наличии" работает  
