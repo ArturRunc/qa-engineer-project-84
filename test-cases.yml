@@ -1,5 +1,5 @@
 summary: |
-    Переход на страницу магазина https://hexlet-products-store.vercel.app/
+    Переход на страницу магазина через браузер OperaGX https://hexlet-products-store.vercel.app/
   requirement: |
    При переходе по ссылку пользователь должен попасть на главную страницу  
   prerequisites: |
@@ -12,6 +12,57 @@ summary: |
     Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка 
 ---
 summary: |
+    Переход на страницу магазина через браузер Microsoft Edge https://hexlet-products-store.vercel.app/
+  requirement: |
+   При переходе по ссылку пользователь должен попасть на главную страницу  
+  prerequisites: |
+     Открыта страница логина
+  test-data: |
+     https://hexlet-products-store.vercel.app/
+  steps:
+    - Переход по ссылке 
+  expected-result: |
+    Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка 
+summary: |
+    Переход на страницу магазина через браузер FireFox https://hexlet-products-store.vercel.app/
+  requirement: |
+   При переходе по ссылку пользователь должен попасть на главную страницу  
+  prerequisites: |
+     Открыта страница логина
+  test-data: |
+     https://hexlet-products-store.vercel.app/
+  steps:
+    - Переход по ссылке 
+  expected-result: |
+    Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка 
+summary: |
+    Переход на страницу магазина через браузер Google Chrom https://hexlet-products-store.vercel.app/
+  requirement: |
+   При переходе по ссылку пользователь должен попасть на главную страницу  
+  prerequisites: |
+     Открыта страница логина
+  test-data: |
+     https://hexlet-products-store.vercel.app/
+  steps:
+    - Переход по ссылке 
+  expected-result: |
+    Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка  
+summary: |
+   Проверка ошибок в консоле DevTools при переходе по ссылке 
+  requirement: |
+   При переходе по ссылку пользователь должен попасть на главную страницу  https://hexlet-products-store.vercel.app/
+  prerequisites: |
+     Открыта главная страница
+  test-data: |
+     https://hexlet-products-store.vercel.app/
+  steps:
+    - Переход по ссылке 
+    - Открыть DevTools
+    - Открыть вкладку Console
+    - Открыть вкладку Network
+  expected-result: |
+    Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка,во вкладке console,network ошибок нет 
+summary: |
     Форма поиска работает 
   requirement: |
    после перехода на главную страницу вводим любой товар в форму поиска.Например:iPhone 9,iPhone x, Huawei P30
@@ -20,7 +71,9 @@ summary: |
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps:
-    - вводи в форму поиска любой товар  
+    - вводи в форму поиска товар iPhone 9
+    - вводи в форму поиска товар iPhone x
+    - вводи в форму поиска товар Huawei P30
   expected-result: |
     Появится искомый товар  
 ---
@@ -47,10 +100,40 @@ summary: |
     https://hexlet-products-store.vercel.app/
   steps:    
     - вводи цену от 200 до 400 в форму цены
+    - вводи цену от 1000 до 2000 в форму цены
+    - вводи цену от 2500 до 5000 в форму цены
   expected-result: |
     Появится товар "OPPOF19"в диапозоне от 200 до 400 условных едениц 
+    Появится товар Samsung Universe 9,MacBook Pro,Samsung Galaxy Book,Microsoft Surface Laptop 4,Infinix INBOOK,HP Pavilion 15-DK1056WM в диапозоне от 1000 до 2000 условных едениц 
+    Появится товар ненайден в диапозоне от 2500 до 5000 условных едениц 
 ---
  summary: |
+В форму цены можно ввести цену двумя способами  и
+requirement: |
+   после перехода на главную страниц вводим в форму цены произвольные цифры или регулируем через стрелки 
+  prerequisites: |
+     Открыта главна страница 
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps:    
+    - печатаем в форму цены от 1000 до 2000
+    - с помощью стрелок вводим в форму цены от 100 до 200 
+  expected-result: |
+  Появится товар Samsung Universe 9,MacBook Pro,Samsung Galaxy Book,Microsoft Surface Laptop 4,Infinix INBOOK,HP Pavilion 15-DK1056WM в диапозоне от 1000 до 2000 условных едениц 
+  Появится товар Non-Alcoholic Concentrated Perfume Oil в диапозоне от 100 до 200 условных едениц 
+summary: |
+Пробуем ввести нерациональные числа 
+requirement: |
+   после перехода на главную страниц вводим в форму цены от 0,333 до 999,99
+  prerequisites: |
+     Открыта главна страница 
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps:    
+    - вводи в форму цены от 0,333 до 999,99
+  expected-result: |
+    Появляется товар в диапозоне от 0,333 до 999,99
+summary: |
 Пробуем ввести букв,символы и отрицательных значений в форму цены
 requirement: |
    после перехода на главную страниц вводим в форму цены букв,символы и отрицательные значения Например:А,Бв,",№*,-2223.
@@ -58,7 +141,8 @@ requirement: |
      Открыта главна страница 
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps:    
+  steps:   
+    - Открыть DevTools
     - вводи в форму цены:А или Бв
     - вводи в форму цены:№ или *
     - вводи в форму цены:-2223
@@ -77,9 +161,32 @@ requirement: |
   test-data: |
      https://hexlet-products-store.vercel.app/
   steps:
+    - Открыть DevTools
     - кликнуть по товару iPhone 9
   expected-result: |
     Пользователь попадает на страницу с 3 фотографии,категория,рейтинг,цена,количество товара в наличии,возможность добавить товар в корзину и краткое описание товара.
+---
+ summary: |
+    Проверка работы хештега на странице с подробным описанием товара samsung universe 9,MackBook Pro,Brown Perfume
+  requirement: |
+   после перехода на страницу с подробным описанием товара кликаем на #категории данного товара.Например:#smartphones,#laptops,#fragrances.
+  prerequisites: |
+     Открыта главна страница 
+  test-data: |
+     https://hexlet-products-store.vercel.app/
+  steps:
+    - Открыть DevTools
+    - заходим на страницу с товаром samsung universe 9
+    - кликаем на #smartphones
+    - переходим на главную страницу магазина
+    - заходим на страницу с товаром MackBook Pro
+    - кликаем на #laptops
+    - переходим на главную страницу магазина
+    - заходим на страницу с товаром Brown Perfume
+    - кликаем на #fragrances
+    - переходим на главную страницу магазина
+  expected-result: |
+    Выполняется переход на страницу с данной катигореей товаров 
 ---
  summary: |
     Поиск по категории работает 
@@ -90,6 +197,7 @@ requirement: |
   test-data: |
      https://hexlet-products-store.vercel.app/
   steps:
+    - Открыть DevTools
     - Развернуть меню категории
     - Выбрать любую категорию 
   expected-result: |
@@ -115,7 +223,7 @@ requirement: |
   prerequisites: |
      Открыта главна страница 
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/
   steps:
     - убрать галочку "В наличии"
   expected-result: |
@@ -128,7 +236,7 @@ requirement: |
   prerequisites: |
      Открыта главна страница 
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/
   steps:
     - нажать кнопку "Cледующая"
     - нажать на кнопку "Предыдущая"
@@ -138,13 +246,15 @@ requirement: |
     summary: |
     добавление товара работает
   requirement: |
-      при выборе любого товара(iPhone 9,iPhone x, Huawei P30) пользователь может довать его в корзину с помощью кнопки "В корзину".Кнопка должна быть у каждого товара  
+      При выборе товара 2 раза добавляем iPhone 9,5 раз Key Holder, 1 раз Oil Free Moisturizer 100ml  пользователь может довать его в корзину с помощью кнопки "В корзину".Кнопка должна быть у каждого товара  
   prerequisites: |
      Открыта главная страница 
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/
   steps:
-    -  выбрать любой товар 
+    -  2 раза добавляем в корзину iPhone 9
+    -  5 раз добавляем Key Holder
+    -  добавляем Oil Free Moisturizer 100ml
     -  нажать кнопку "В корзину"
   expected-result: |
     Выбранный товар попадает в раздел корзина,в правем верхнем углу кнопки "корзина" отображается количество товаров находящихся в ней 
@@ -156,7 +266,7 @@ requirement: |
   prerequisites: |
      товар добавлен в корзину 
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/cart
   steps:
     -  перейти в раздел "корзина"
   expected-result: |
@@ -165,28 +275,28 @@ requirement: |
     summary: |
     Оформление заказа
   requirement: |
-      при  нажатии на кнопку "Оформить заказ" всплывает окно об успешно оформленом заказе   
+      На странице корзины пользователь сможет удалить товар из корзины,очистить корзину,продолжить вибирать товары в каталоге,оформить заказ с переходом на страницу оплаты
   prerequisites: |
-     открыт раздел корзины
-     товар добавлен в корзину
+     открыт раздел корзины c добавленым товаром iPhone 9 2шт,Key Holder 5шт,Oil Free Moisturizer 100ml 1шт
+     открыт DevTools
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/cart
   steps:
-    -  нажать кнопку "Оформления товара"
+    - Кликаем на кнопку"Оформить заказ"
   expected-result: |
-    высплывает окно успешно выполненого заказа с наименование,ценой,стоимостью оформленного товара со свидкой или без и кнопкой "закрыть"
+    Происходит переход на страницу с оплатой товара где клиен видет наименование,количество,цену определенного товара и общую сумму всех товаров.
     ---
     summary: |
     удаление товара из корзины 
   requirement: |
-      при  нажатии на кнопку "удалить"в строчке,товар удаляется  
+      при  нажатии на кнопку "удалить"в строчке,товар удаляется 
   prerequisites: |
      открыт раздел корзина 
-     в корзине добавлен товар
+     в корзине добавлен товар iPhone 9 2шт,Key Holder 5шт,Oil Free Moisturizer 100ml 1шт
   test-data: |
-    
+     https://hexlet-products-store.vercel.app/cart
   steps:
-    -  нажать на кнопку "удалить"
+    -  нажать на кнопку "удалить" в строче товара iPhone 9 
   expected-result: |
     товар сразу удалится из корзины пользователя без подтверждения 
     ---
@@ -195,10 +305,10 @@ requirement: |
   requirement: |
       при  нажатии на кнопки "Очистить корзину" весь выбранный товар удалится  
   prerequisites: |
-     выполнен переход в раздел корзина
-     добавлено несколько товаров в корзину 
+      открыта страница корзины
+      в корзине добавлен товар iPhone 9 2шт,Key Holder 5шт,Oil Free Moisturizer 100ml 1шт 
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/cart
   steps:
     -  нажать на кнопку "Очистить корзину"
   expected-result: |
@@ -207,11 +317,11 @@ requirement: |
     summary: |
     Переход из корзины в магазин
   requirement: |
-      при  нажатии на кнопку "Продолжить покупки" клиент переходит на главную страницу   
+      при  нажатии на кнопку "Продолжить покупки" клиент переходит на главную страницу каталога 
   prerequisites: |
      выполнен вход в корзину
   test-data: |
-    
+     https://hexlet-products-store.vercel.app/cart
   steps:
     -  нажать на кнопку "Продолжить покупки "
   expected-result: |
@@ -227,7 +337,7 @@ summary: |
   prerequisites: |
      открыта главная страница
   test-data: |
-    
+    https://hexlet-products-store.vercel.app/
   steps:
     -  развернуть вкладку "Язык"
     -  выбрать язык 
@@ -243,7 +353,10 @@ summary: |
   test-data: |
      https://hexlet-products-store.vercel.app/
   steps:
-    - Ставим региональные настройки
+    - Ставим региональные настройки Shanghai
+    - Перезагружаем страницу
+    - Меняем язык
+    - Ставим региональные настройки Tokyo
     - Перезагружаем страницу
     - Меняем язык
   expected-result: |
@@ -254,10 +367,10 @@ summary: |
   requirement: |
    Записывая в форму поиска HTML тег <h1>aaa</h1> если введенный тег не учитывается то сайт имеет защиту 
   prerequisites: |
-     Открыта страница логина
+     Открыта главная страница 
   test-data: |
      https://hexlet-products-store.vercel.app/
   steps:
     - Вводим в форму поиска <h1>aaa</h1>
   expected-result: |
-      Форма поиска не отправляет запросы на сервер.
+      Тег не учитывается в форме поиска
