@@ -152,7 +152,7 @@ summary: |
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps:
-    - убрать галочку "В наличии"
+    - выключить чекбокс "В наличии"
   expected-result: |
     Появится список товаров которого нет в наличии
 summary: |
