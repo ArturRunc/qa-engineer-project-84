@@ -1,302 +1,302 @@
 - summary: |
-Открыть страницу https://hexlet-products-store.vercel.app/
-requirement: |
-При переходе по ссылке пользователь должен попасть на главную страницу магазина
-prerequisites: |
-Открыта страница логина
-test-data: |
-https://hexlet-products-store.vercel.app/
-steps:
-- Переход по ссылке
-expected-result: |
-Пользователь должен попасть на главную страницу, где отображается товар, меню фильтрации, корзина и выбор языка
-
-- summary: |
-Форма поиска
-requirement: |
-Вводим любой товар в форму поиска
-prerequisites: |
-Открыта главная страница
-test-data: |
-https://hexlet-products-store.vercel.app/
-steps:
-- Вводи в форму поиска товар
-expected-result: |
-Появится искомый товар
-
-- summary: |
-Запрос на русском языке в форме поиска
-requirement: |
-После перехода на главную страницу вводим любой товар на русском языке в форму поиска.
-prerequisites: |
-Открыта главная страница
-test-data: |
-https://hexlet-products-store.vercel.app/
-steps:
-- Вводи ключевое слово в форму поиска
-expected-result: |
-Появится искомый товар
-
-- summary: |
-Фильтр цены
-requirement: |
-Вводим цену от 200 до 400
-prerequisites: |
-Открыта главная страница
-test-data: |
-https://hexlet-products-store.vercel.app/
-steps:
-- Вводи цену от 200 до 400 в форму цены
-expected-result: |
-Отображается товар в диапазоне от 200 до 400 условных единиц
-summary: |
-  Нерациональные числа 
-requirement: |
-  Вводим в форму цены от 0,333 до 999,99 должен появиться товар в этом диапозне 
+   Открыть страницу https://hexlet-products-store.vercel.app/
+  requirement: |
+    При переходе по ссылке пользователь должен попасть на главную страницу магазина
   prerequisites: |
-     Открыта главна страница 
-test-data: |
+     Открыта страница логина
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:    
-    - вводи в форму цены от 0,333 до 999,99
- expected-result: |
+  steps:
+    - Переход по ссылке
+  expected-result: |
+   Пользователь должен попасть на главную страницу, где отображается товар, меню фильтрации, корзина и выбор языка
+
+- summary: |
+   Форма поиска
+  requirement: |
+    Вводим любой товар в форму поиска
+  prerequisites: |
+     Открыта главная страница
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps:
+   - Вводи в форму поиска товар
+  expected-result: |
+     Появится искомый товар.
+
+- summary: |
+   Запрос на русском языке в форме поиска
+  requirement: |
+    После перехода на главную страницу вводим любой товар на русском языке в форму поиска.
+  prerequisites: |
+     Открыта главная страница
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps:
+   - Вводи ключевое слово в форму поиска
+  expected-result: |
+     Появится искомый товар
+
+- summary: |
+   Фильтр цены
+  requirement: |
+    Вводим цену от 200 до 400
+  prerequisites: |
+   Открыта главная страница
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps:
+  - Вводи цену от 200 до 400 в форму цены
+  expected-result: |
+   Отображается товар в диапазоне от 200 до 400 условных единиц
+- summary: |
+   Нерациональные числа 
+  requirement: |
+    Вводим в форму цены от 0,333 до 999,99 должен появиться товар в этом диапозне 
+  prerequisites: |
+   Открыта главна страница 
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps:    
+    - Вводи в форму цены от 0,333 до 999,99
+  expected-result: |
     Появляется товар в диапозоне от 0,333 до 999,99
-summary: |
- Вводим буквы в форму цены
-requirement: |
+- summary: |
+   Вводим буквы в форму цены
+  requirement: |
    после перехода на главную страниц вводим в форму цены буквы
-prerequisites: |
-     Открыта главна страница 
-test-data: |
+  prerequisites: |
+   Открыта главна страница 
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:   
-    - Открыть DevTools
-    - вводи в форму цены:А или Бв
+  steps:   
+  - Открыть DevTools
+  - вводи в форму цены:А или Бв
   expected-result: |
     При вводе буквы в форму цены ничего не происходит
-summary: |
- Вводим символы в форму цены
-requirement: |
+- summary: |
+   Вводим символы в форму цены
+  requirement: |
    после перехода на главную страниц вводим в форму цены символы 
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:   
+  steps:   
     - Открыть DevTools
     - вводи в форму цены:№ или *
   expected-result: |
     При вводе символов в форму цены ничего не происходит 
-summary: |
- Вводим отрицательных значений в форму цены
-requirement: |
+- summary: |
+   Вводим отрицательных значений в форму цены
+  requirement: |
    после перехода на главную страниц вводим в форму цены отрицательные значения
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:   
+  steps:   
     - Открыть DevTools
     - вводи в форму цены:-2223
-expected-result: |
+  expected-result: |
     При вводе отрицательного значения в форму цены ничего не происходит
-summary: |
+- summary: |
     Карточка товара 
-requirement: |
+  requirement: |
     Клиент выбрав любой товар переходит на страницу товара с подробным описанием  
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Открыть DevTools
     - кликнуть по товару 
-expected-result: |
-    Открывается страница товара 
-summary: |
-    Хештег в карточке товара
-requirement: |
+  expected-result: |
+   Открывается страница товара 
+- summary: |
+     Хештег в карточке товара
+  requirement: |
     На странице с подробным описанием товара кликаем на #категории данного товара.Клиент попадает на страницу только с товаром данной категории.
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Открыть DevTools
     - заходим на страницу с товаром
     - кликаем на #категорию
-expected-result: |
+  expected-result: |
     Выполняется переход на страницу с данной категореей товаров 
-summary: |
+- summary: |
     Поиск по категории  
-requirement: |
+  requirement: |
     выбров категорию появляется товар данной категории   
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Открыть DevTools
     - Развернуть меню категории
     - Выбрать категорию 
-expected-result: |
+  expected-result: |
     Появится список товаров из выбранной категории  
-summary: |
+- summary: |
     Кллючивое слово+категория
-requirement: |
+  requirement: |
     клиен выберает категорию после чего вводит ключевое слово в форму поиска получив искомы товар   
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Открыть DevTools
     - Развернуть меню категории
     - Выбрать категорию 
     - ввод ключевого слова
-expected-result: |
+  expected-result: |
     Появится список товаров 
-summary: |
+- summary: |
     Поиск по производителю  
-requirement: |
+  requirement: |
    включаем чекбокс любого производителя.Появится товар выбранного производителя.
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Включить чекбокс производителя 
-expected-result: |
+  expected-result: |
     Появится список товаров от выбронного производителя
-summary: |
+- summary: |
    Отображение товара которого нет в наличии  
-requirement: |
+  requirement: |
       в меню фильтрации сразу включен чекбокс "В наличии",выключая его клиент получит список товара которого нет в наличии
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - выключить чекбокс "В наличии"
-expected-result: |
+  expected-result: |
     Появится список товаров которого нет в наличии
-summary: |
+- summary: |
     Перемещение по страницам 
-requirement: |
+  requirement: |
    при  нажатии на кнопку "Cледующая" клиент переходит на слудующую страницу с товарами,если ему нужно вернуться пользователь нажимает кнопку"предыдущая"и попадает на предыдущую страницу 
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - нажать кнопку "Cледующая"
     - нажать на кнопку "Предыдущая"
-expected-result: |
+  expected-result: |
      позьзователь успешно перемещается по страницам магазина
-summary: |
+- summary: |
     добавление товара 
-requirement: |
+  requirement: |
       При выборе товара пользователь может довать его в корзину с помощью кнопки "В корзину".Кнопка должна быть у каждого товара  
-prerequisites: |
+  prerequisites: |
      Открыта главная страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     -  Открыть DevTools
     -  Добавить товар
     -  Открыть страницу корзины
-expected-result: |
+  expected-result: |
     Выбранный товар попадает в раздел корзина 
-summary: |
+- summary: |
     Страница корзины
-requirement: |
+  requirement: |
       Открыв страницу корзина клиент увидит информацию о выбранном товаре. 
-prerequisites: |
+  prerequisites: |
      товар добавлен в корзину 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/cart
-steps:
+  steps:
     -  перейти в раздел "корзина"
-expected-result: |
+  expected-result: |
     пользователь видит подробную информацию о выбранном товаре 
-summary: |
+- summary: |
     Оформление заказа с переходом на страницу оплаты 
-requirement: |
+  requirement: |
     Клиент оформляет заказ с переходом на страницу оплаты
-prerequisites: |
+  prerequisites: |
      открыт раздел корзины 
      товар добавлен
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/cart
-steps:
+  steps:
     - Открыть DevTools
     - Кликаем на кнопку "Оформить заказ"
   expected-result: |
     Происходит переход на страницу с оплатой товара
-summary: |
+- summary: |
     Удалить товара 
-requirement: |
+  requirement: |
       при  нажатии на кнопку "удалить"в строчке,товар удаляется 
-prerequisites: |
-     открыт раздел корзина 
+  prerequisites: |
+    открыт раздел корзина 
     добавлен товар 
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/cart
-steps:
+  steps:
     -  открыть DevTools
     -  нажать на кнопку "удалить" в строче товара 
   expected-result: |
     товар сразу удалится из корзины пользователя
-summary: |
+- summary: |
    Удаление всего товара из корзины
-requirement: |
+  requirement: |
       при  нажатии на кнопки "Очистить корзину" весь выбранный товар удалится с окном подтверждения 
-prerequisites: |
+  prerequisites: |
       открыта страница корзины
       в корзине добавлен товар
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/cart
-steps:
+  steps:
     -  нажать на кнопку "Очистить корзину"
-expected-result: |
+  expected-result: |
     все товары находящиеся в корзине пользователя удаляются с подтверждения 
-summary: |
+- summary: |
     Продолжить выберать товар в каталоге
-requirement: |
+  requirement: |
       при  нажатии на кнопку "Продолжить покупки" клиент переходит в каталога 
-prerequisites: |
+  prerequisites: |
      выполнен вход в корзину
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/cart
-steps:
-    -  нажать на кнопку "Продолжить покупки "
-expected-result: |
+  steps:
+    -  нажать на кнопку "Продолжить покупки " 
+  expected-result: |
     пользователь попадает на главную страницу
-summary: |
+- summary: |
    Перевод  страницы 
-requirement: |
+  requirement: |
     при развертывании и выборе языка сттраница переводится 
-prerequisites: |
+  prerequisites: |
      открыта главная страница
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     -  развернуть вкладку "Язык"
     -  выбрать язык 
-expected-result: |
+  expected-result: |
     страница пользователя переводится на выбраный им язык 
-summary: |
+- summary: |
      Мобильная версия
-requirement: |
+  requirement: |
    Открыв сайт на мобильном устройстве клиенту отобразиться страница магазина 
-prerequisites: |
+  prerequisites: |
      Empty
-test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Открыть DevTools
     - Нажимаем Ctrl+Shift+M
     - Выбрать мобильное устройство
-expected-result: |
+  expected-result: |
       Отображается мобильная версия  
-      
+ё
