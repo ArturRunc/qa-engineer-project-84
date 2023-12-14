@@ -70,6 +70,7 @@ test-cases:
      status: pass   
      
 bugreports: |
+
 - summary: |
       Запрос на русскойм языке в форма поиска 
   environment: |
