@@ -1,4 +1,3 @@
-test-cases:
   - summary: |
       Открыть страницу https://hexlet-products-store.vercel.app/
       status: pass
