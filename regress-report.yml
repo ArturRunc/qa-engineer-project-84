@@ -72,7 +72,6 @@ test-cases:
 bugreports: |
 
 - summary: |
-     
       Запрос на русскойм языке в форма поиска 
   environment: |
        Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
@@ -89,12 +88,12 @@ bugreports: |
   environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
      Windows 11 Pro 
-     steps-to-reproduce: |
+  steps-to-reproduce: |
      1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
      2. ввести отрицательное значение
-     expected-result: |
+  expected-result: |
      Отрицательное значение не вводится 
-     actual-result: |
+  actual-result: |
      Вводится отрицательное значение
      Нет изменений на странице 
 - summary: |
