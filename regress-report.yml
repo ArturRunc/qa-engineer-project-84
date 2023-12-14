@@ -68,7 +68,7 @@ test-cases:
   - summary: |
      Мобильная версия
     status: pass
-    bugreports:
+bugreports:
   - summary: |
       Запрос на русскойм языке в форма поиска 
     environment: |
