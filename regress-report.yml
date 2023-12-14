@@ -67,8 +67,7 @@ test-cases:
      status: pass
 - summary: |
      Мобильная версия
-     status: pass
----     
+     status: pass    
 bugreports: |
  - summary: |
       Запрос на русскойм языке в форма поиска 
