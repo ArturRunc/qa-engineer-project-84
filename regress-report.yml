@@ -7,7 +7,7 @@ test-cases:
     status: pass
   - summary: |
       Запрос на русскойм языке в форма поиска 
-      status: fail 
+    status: fail 
   - summary: |
       Фильтр цены
     status: pass
