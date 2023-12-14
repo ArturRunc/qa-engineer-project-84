@@ -70,8 +70,7 @@ test-cases:
      status: pass
 ---     
 bugreports: |
-
-- summary: |
+ - summary: |
       Запрос на русскойм языке в форма поиска 
   environment: |
        Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
