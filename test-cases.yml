@@ -1,51 +1,54 @@
 - summary: |
-     Открыть страницу https://hexlet-products-store.vercel.app/
-  requirement: |
-     При переходе по ссылку пользователь должен попасть на главную страницу магазина
-  prerequisites: |
-     Открыта страница логина
-  test-data: |
-     https://hexlet-products-store.vercel.app/
-  steps:
-   - Переход по ссылке 
-  expected-result: |
-    Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка 
-- summary: |
-    Форма поиска 
-  requirement: |
-   вводим любой товар в форму поиска
-  prerequisites: |
-     Открыта главна страница 
-  test-data: |
-    https://hexlet-products-store.vercel.app/
-  steps:
-    - вводи в форму поиска товар 
-  expected-result: |
-    Появится искомый товар
-- summary: |
-    Запрос на русскойм языке в форма поиска 
-  requirement: |
-   после перехода на главную страницу вводим любой товар на русском языке в форму поиска.
-  prerequisites: |
-     Открыта главная страница 
-  test-data: |
-    https://hexlet-products-store.vercel.app/
-  steps:
-    - вводи ключевое слово в форму поиска 
-  expected-result: |
-    Появится искомый товар  
-summary: |
-    Фильтр цены
+Открыть страницу https://hexlet-products-store.vercel.app/
 requirement: |
-    вводим цену от 200 до 400
+При переходе по ссылке пользователь должен попасть на главную страницу магазина
 prerequisites: |
-     Открыта главна страница 
+Открыта страница логина
 test-data: |
-    https://hexlet-products-store.vercel.app/
- steps:    
-    - вводи цену от 200 до 400 в форму цены
+https://hexlet-products-store.vercel.app/
+steps:
+- Переход по ссылке
 expected-result: |
-    Отображается товар в диапозоне от 200 до 400 условных едениц 
+Пользователь должен попасть на главную страницу, где отображается товар, меню фильтрации, корзина и выбор языка
+
+- summary: |
+Форма поиска
+requirement: |
+Вводим любой товар в форму поиска
+prerequisites: |
+Открыта главная страница
+test-data: |
+https://hexlet-products-store.vercel.app/
+steps:
+- Вводи в форму поиска товар
+expected-result: |
+Появится искомый товар
+
+- summary: |
+Запрос на русском языке в форме поиска
+requirement: |
+После перехода на главную страницу вводим любой товар на русском языке в форму поиска.
+prerequisites: |
+Открыта главная страница
+test-data: |
+https://hexlet-products-store.vercel.app/
+steps:
+- Вводи ключевое слово в форму поиска
+expected-result: |
+Появится искомый товар
+
+- summary: |
+Фильтр цены
+requirement: |
+Вводим цену от 200 до 400
+prerequisites: |
+Открыта главная страница
+test-data: |
+https://hexlet-products-store.vercel.app/
+steps:
+- Вводи цену от 200 до 400 в форму цены
+expected-result: |
+Отображается товар в диапазоне от 200 до 400 условных единиц
 summary: |
   Нерациональные числа 
 requirement: |
