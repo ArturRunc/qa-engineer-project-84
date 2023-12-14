@@ -1,39 +1,38 @@
-summary: |
+- summary: |
      Открыть страницу https://hexlet-products-store.vercel.app/
- requirement: |
+  requirement: |
      При переходе по ссылку пользователь должен попасть на главную страницу магазина
-prerequisites: |
+  prerequisites: |
      Открыта страница логина
- test-data: |
+  test-data: |
      https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - Переход по ссылке 
-expected-result: |
+  expected-result: |
     Пользователь должен попасть на главную страницу где отображается товар,меню фильтрации,корзина и выбор языка 
-    
-summary: |
+- summary: |
     Форма поиска 
   requirement: |
    вводим любой товар в форму поиска
-prerequisites: |
+  prerequisites: |
      Открыта главна страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - вводи в форму поиска товар 
-expected-result: |
+  expected-result: |
     Появится искомый товар
-summary: |
+- summary: |
     Запрос на русскойм языке в форма поиска 
-requirement: |
+  requirement: |
    после перехода на главную страницу вводим любой товар на русском языке в форму поиска.
-prerequisites: |
+  prerequisites: |
      Открыта главная страница 
-test-data: |
+  test-data: |
     https://hexlet-products-store.vercel.app/
-steps:
+  steps:
     - вводи ключевое слово в форму поиска 
-expected-result: |
+  expected-result: |
     Появится искомый товар  
 summary: |
     Фильтр цены
