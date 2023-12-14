@@ -1,10 +1,10 @@
 summary: |
      Открыть страницу https://hexlet-products-store.vercel.app/
-requirement: |
+ requirement: |
      При переходе по ссылку пользователь должен попасть на главную страницу магазина
 prerequisites: |
      Открыта страница логина
-test-data: |
+ test-data: |
      https://hexlet-products-store.vercel.app/
 steps:
     - Переход по ссылке 
