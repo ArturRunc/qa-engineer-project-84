@@ -72,54 +72,54 @@ test-cases:
 bugreports: 
   - summary: |
       Запрос на русскойм языке в форма поиска 
-   environment: |
+    environment: |
        Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
        Windows 11 Pro  
-   steps-to-reproduce: |
+    steps-to-reproduce: |
       1.Зайти на страницу логина https://hexlet-products-store.vercel.app/
       2. Ввести ключевое слово на русском языке
-   expected-result: |
+    expected-result: |
       Появится товар по ключевому слову
-   actual-result: |
+    actual-result: |
       Нет изменений на странице 
   - summary: |
       Вводим отрицательное значение в форму цены
-   environment: |
+    environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
      Windows 11 Pro 
-   steps-to-reproduce: |
+    steps-to-reproduce: |
      1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
      2. ввести отрицательное значение
-   expected-result: |
+    expected-result: |
      Отрицательное значение не вводится 
-   actual-result: |
+    actual-result: |
      Вводится отрицательное значение
      Нет изменений на странице 
   - summary: |
      Отображение товара которого нет в наличии
-   environment: |
+    environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
      Windows 11 Pro 
-   steps-to-reproduce: |
+    steps-to-reproduce: |
      1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
      2. Выключить чекбокс "В наличии"
-   expected-result: |
+    expected-result: |
      Появится список товаров которого нет в наличии 
-   actual-result: |
+    actual-result: |
      Нет изменений на странице 
      В консоли браузера в Devtools ничего не происходит
   - summary: |
       Оформить заказ с переходом на страницу оплаты.
-   environment: |
+    environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
      Windows 11 Pro 
-   steps-to-reproduce: |
+    steps-to-reproduce: |
      1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
      2. Добавить товар в корзину 
      3. Зайти на страницу корзины 
      4. Нажать кнопку "Оформить товар"
-   expected-result: |
+    expected-result: |
      Происходит переход на страницу оплаты.
-   actual-result: |
+    actual-result: |
      На странице появляется всплывающее окно "Заказ успешно оформлен"
      В консоли браузера в Devtools выводится ошибка {"status":"500","title":"failed","type":"about:blank","detail":"failed"}
