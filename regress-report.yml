@@ -1,10 +1,10 @@
 test-cases:
   - summary: |
       Открыть страницу https://hexlet-products-store.vercel.app/
-  status: pass
+      status: pass
   - summary: |
      Форма поиска 
-  status: pass
+    status: pass
   - summary: |
      Запрос на русскойм языке в форма поиска 
     status: fail 
