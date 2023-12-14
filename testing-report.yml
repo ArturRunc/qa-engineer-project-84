@@ -1,67 +1,79 @@
-summary: |
-     Открыть страницу https://hexlet-products-store.vercel.app/
+- summary: |
+    Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
+  status: fail
+
+- summary: |
+    Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
+  status: pass
+- summary: |
+    Открыть страницу https://hexlet-products-store.vercel.app/
   status: pass  
-  
-summary: |
-     Форма поиска 
-  Status: pass   
-summary: |
-     Запрос на русскойм языке в форма поиска 
-  Status:fail    
-summary: |
+- summary: |
+    Форма поиска 
+  status: pass   
+- summary: |
+    Запрос на русскойм языке в форма поиска 
+  status:fail    
+- summary: |
     Фильтр цены
-  Status: pass
-summary: |
- Нерациональные числа 
-  Status: pass
-summary: |
- Вводим букв,символы и отрицательных значений в форму цены
+  status: pass
+- summary: |
+    Нерациональные числа 
+  status: pass
+- summary: |
+    Вводим буквы в форму цены
   Status:
     буквы:pass
+- summary: |
+    Вводим символы  в форму цены
+  status:
     символы:pass
+- summary: |
+    Вводим отрицательных значений в форму цены
+  status:
     отрицательноет значение:fail
-summary: |
+- summary: |
     Карточка товара 
-  Status:pass   
-summary: |
+  status:pass   
+- summary: |
     Хештег в карточке товара
-  Status: fail    
-summary: |
+  status: fail    
+- summary: |
     Поиск по категории  
-  Status: pass   
-summary: |
+  status: pass   
+- summary: |
     Кллючивое слово+категория
-  Status: pass   
-summary: |
+  status: pass   
+- summary: |
     Поиск по производителю  
-  Status: pass   
-summary: |
+  status: pass   
+- summary: |
     Отображение товара которого нет в наличии  
-  Status:   
-summary: |fail
+  status:   
+- summary: |fail
     Перемещение по страницам 
-  Status: pass   
-summary: |
+  status:pass   
+- summary: |
     добавление товара 
-  Status: pass   
-summary: |
+  status: pass   
+- summary: |
     Страница корзины
-  Status: pass   
-summary: |
+  status: pass   
+- summary: |
     Оформление заказа с переходом на страницу оплаты
-  Status: fail   
-summary: |
+  status: fail   
+- summary: |
     Удалить товара 
-  Status: pass   
-summary: |
+  status: pass   
+- summary: |
    Удаление всего товара из корзины
-  Status: pass  
-summary: |
-    Продолжить выберать товар в каталоге
-  Status: pass
-summary: |
+  status: pass  
+- summary: |
+   Продолжить выберать товар в каталоге
+  status: pass
+- summary: |
    Перевод  страницы 
-  Status: pass
-summary: |
-     Мобильная версия
-  Status: pass
+  status: pass
+- summary: |
+   Мобильная версия
+  status: pass
