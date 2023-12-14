@@ -1,13 +1,5 @@
 test-cases:
   - summary: |
-      Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
-    status: pass
-
-  - summary: |
-      Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
-    status: fail
-    test-cases:
-  - summary: |
       Открыть страницу https://hexlet-products-store.vercel.app/
     Status: pass   
   - summary: |
