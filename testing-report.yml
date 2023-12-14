@@ -1,69 +1,91 @@
 - summary: |
     Открыть страницу https://hexlet-products-store.vercel.app/
   status: pass  
+  
 - summary: |
     Форма поиска 
   status: pass   
+  
 - summary: |
     Запрос на русскойм языке в форма поиска 
-    status:fail   
+    status:fail  
+    
 - summary: |
     Фильтр цены
   status: pass
+  
 - summary: |
     Нерациональные числа 
   status: pass
+  
 - summary: |
     Вводим буквы в форму цены
     status:pass
+    
 - summary: |
     Вводим символы  в форму цены
     status:pass
+    
 - summary: |
     Вводим отрицательных значений в форму цены
     status:fail
+    
 - summary: |
     Карточка товара 
     status:pass   
+    
 - summary: |
     Хештег в карточке товара
   status: fail  
+  
 - summary: |
     Поиск по категории  
   status: pass  
+  
 - summary: |
     Кллючивое слово+категория
-  status: pass  
+  status: pass 
+  
 - summary: |
     Поиск по производителю  
-  status: pass   
+  status: pass 
+  
 - summary: |
     Отображение товара которого нет в наличии  
   status: fail  
+  
 - summary: |
     Перемещение по страницам 
     status:pass   
+    
 - summary: |
     добавление товара 
   status: pass 
+  
 - summary: |
     Страница корзины
   status: pass   
+  
 - summary: |
     Оформление заказа с переходом на страницу оплаты
   status: fail  
+  
 - summary: |
     Удалить товара 
   status: pass   
+  
 - summary: |
    Удаление всего товара из корзины
   status: pass  
+  
 - summary: |
    Продолжить выберать товар в каталоге
   status: pass
+  
 - summary: |
    Перевод  страницы 
   status: pass
+  
 - summary: |
    Мобильная версия
   status: pass
