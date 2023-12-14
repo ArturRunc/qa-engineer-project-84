@@ -67,9 +67,10 @@ test-cases:
      status: pass
 - summary: |
      Мобильная версия
-     status: pass    
+     status: pass   
+     
 bugreports: |
- - summary: |
+- summary: |
       Запрос на русскойм языке в форма поиска 
   environment: |
        Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
@@ -81,7 +82,7 @@ bugreports: |
       Появится товар по ключевому слову
   actual-result: |
       Нет изменений на странице 
- - summary: |
+- summary: |
       Вводим отрицательное значение в форму цены
   environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
@@ -94,7 +95,7 @@ bugreports: |
      actual-result: |
      Вводится отрицательное значение
      Нет изменений на странице 
- - summary: |
+- summary: |
      Отображение товара которого нет в наличии
   environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
@@ -107,7 +108,7 @@ bugreports: |
   actual-result: |
      Нет изменений на странице 
      В консоли браузера в Devtools ничего не происходит
- - summary: |
+- summary: |
       Оформить заказ с переходом на страницу оплаты.
   environment: |
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
