@@ -1,73 +1,73 @@
 test-cases:
   - summary: |
       Открыть страницу https://hexlet-products-store.vercel.app/
-      status: pass
+    status: pass
   - summary: |
-     Форма поиска 
-     status: pass
+      Форма поиска 
+    status: pass
   - summary: |
-     Запрос на русскойм языке в форма поиска 
-     status: fail 
+      Запрос на русскойм языке в форма поиска 
+      status: fail 
   - summary: |
-     Фильтр цены
-     status: pass
+      Фильтр цены
+    status: pass
   - summary: |
-     Нерациональные числа 
-     status: pass
+      Нерациональные числа 
+    status: pass
   - summary: |
-     Вводим букв,символы и отрицательных значений в форму цены
-     status: pass
+      Вводим букв,символы и отрицательных значений в форму цены
+    status: pass
   - summary: |
-     Вводим символы в форму цены
-     status: pass
+      Вводим символы в форму цены
+    status: pass
   - summary: |
-     Вводим отрицательных значений в форму цены
-     status: fail
+      Вводим отрицательных значений в форму цены
+    status: fail
   - summary: |
-     Карточка товара 
-     status: pass
+      Карточка товара 
+    status: pass
   - summary: |
-     Хештег в карточке товара
-     status: pass
+      Хештег в карточке товара
+    status: pass
   - summary: |
-     Поиск по категории  
-     status: pass
+      Поиск по категории  
+    status: pass
   - summary: |
-     Кллючивое слово+категория
-     status: pass
+      Кллючивое слово+категория
+    status: pass
   - summary: |
-     Поиск по производителю  
-     status: pass
+      Поиск по производителю  
+    status: pass
   - summary: |
-     Отображение товара которого нет в наличии  
-     status: fail
+      Отображение товара которого нет в наличии  
+    status: fail
   - summary: |
-     Перемещение по страницам 
-     status: pass
+      Перемещение по страницам 
+    status: pass
   - summary: |
-     добавление товара 
-     status: pass
+      добавление товара 
+    status: pass
   - summary: |
-     Страница корзины
-     status: pass
+      Страница корзины
+    status: pass
   - summary: |
-     Оформление заказа с переходом на страницу оплаты
-     status: fail
+      Оформление заказа с переходом на страницу оплаты
+    status: fail
   - summary: |
-     Удалить товара 
-     status: pass
+      Удалить товара 
+    status: pass
   - summary: |
-     Удаление всего товара из корзины
-     status: pass
+      Удаление всего товара из корзины
+    status: pass
   - summary: |
-     Продолжить выберать товар в каталоге
-     status: pass
+      Продолжить выберать товар в каталоге
+    status: pass
   - summary: |
-     Перевод  страницы 
-     status: pass
+      Перевод  страницы 
+    status: pass
   - summary: |
-     Мобильная версия
-     status: pass   
+      Мобильная версия
+    status: pass   
      
 bugreports: 
   - summary: |
