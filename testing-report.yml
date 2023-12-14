@@ -2,10 +2,10 @@ summary: |
      Открыть страницу https://hexlet-products-store.vercel.app/
   Status: pass   
 summary: |
-    Форма поиска 
+     Форма поиска 
   Status: pass   
 summary: |
-    Запрос на русскойм языке в форма поиска 
+     Запрос на русскойм языке в форма поиска 
   Status:fail    
 summary: |
     Фильтр цены
