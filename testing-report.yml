@@ -96,11 +96,11 @@
 
 - summary: |
    Перевод корзины
-  status: pass
+  status: fail
 
 - summary: |
    Перевод карточки с подробным описанием товара 
-  status: pass
+  status: fail
   
 - summary: |
    Мобильная версия
