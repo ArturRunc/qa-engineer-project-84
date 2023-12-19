@@ -9,7 +9,7 @@
   status: fail   
 - summary: |
     Фильтр цены
-  status: pass 
+  status: fail 
 - summary: |
     Нерациональные числа 
   status: pass  
@@ -63,7 +63,7 @@
   status: pass 
 - summary: |
    Перевод  страницы 
-  status: pass
+  status: fail
 - summary: |
    Мобильная версия
   status: pass
