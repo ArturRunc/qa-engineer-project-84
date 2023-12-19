@@ -29,6 +29,9 @@
     Хештег в карточке товара
   status: fail 
 - summary: |
+    Не успешная фильтрация по рейтингу 
+  status: fail 
+- summary: |
     Поиск по категории  
   status: pass 
 - summary: |
