@@ -1,75 +1,115 @@
 - summary: |
     Открыть страницу https://hexlet-products-store.vercel.app/
   status: pass  
+  
 - summary: |
     Форма поиска 
-  status: pass  
+  status: pass 
+  
 - summary: |
     Запрос на русском языке в форма поиска 
-  status: fail   
+  status: fail 
+  
 - summary: |
     Фильтрация по цене
   status: pass
+  
 - summary: |
     Фильтрация по цене со скидкой
   status: fail
+  
 - summary: |
     Нерациональные числа
   status: pass  
+  
 - summary: |
     Вводим буквы в форму цены
   status: pass  
+  
 - summary: |
     Вводим символы  в форму цены
-  status: pass  
+  status: pass 
+  
 - summary: |
     Вводим отрицательных значений в форму цены
   status: fail 
+  
 - summary: |
     Карточка товара 
   status: pass  
+  
 - summary: |
     Хештег в карточке товара
   status: fail 
+  
 - summary: |
     Не успешная фильтрация по рейтингу 
   status: fail 
+  
 - summary: |
     Поиск по категории  
   status: pass 
+  
 - summary: |
     Ключивое слово+категория
   status: pass 
+  
 - summary: |
     Поиск по производителю  
   status: pass 
+  
 - summary: |
     Отображение товара которого нет в наличии  
   status: fail 
+  
 - summary: |
     Перемещение по страницам 
   status: pass 
+  
 - summary: |
     добавление товара 
   status: pass
+  
 - summary: |
     Страница корзины
   status: pass 
+  
 - summary: |
     Оформление заказа с переходом на страницу оплаты
   status: fail
+  
 - summary: |
     Удалить товара 
   status: pass 
+  
 - summary: |
    Удаление всего товара из корзины
   status: pass
+  
 - summary: |
    Продолжить выбор товара в каталоге
   status: pass 
+  
 - summary: |
    Перевод  страницы 
   status: fail
+  
 - summary: |
    Мобильная версия
+  status: pass
+
+- summary: |
+   Тестирование основных требовоний в браузере Oper
+  status: pass
+
+- summary: |
+   Тестирование основных требовоний в браузере Firefox
+  status: pass
+  
+- summary: |
+   Тестирование основных требовоний в браузере Google Microsoft Edge
+  status: pass
+
+- summary: |
+   Тестирование основных требовоний в браузере Google chrom
   status: pass
