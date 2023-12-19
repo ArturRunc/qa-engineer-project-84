@@ -91,8 +91,16 @@
   status: pass 
   
 - summary: |
-   Перевод  страницы 
+   Перевод главной страницы страницы 
   status: fail
+
+- summary: |
+   Перевод корзины
+  status: pass
+
+- summary: |
+   Перевод карточки с подробным описанием товара 
+  status: pass
   
 - summary: |
    Мобильная версия
