@@ -1,6 +1,7 @@
 - summary: |
      Не производится поиск на русском языке. 
    environment: |
+   
      Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
      Windows 11 Pro  
    steps-to-reproduce: |
