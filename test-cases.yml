@@ -126,6 +126,18 @@ steps:
 expected-result: |
 Выполняется переход на страницу с данными категории товаров.
 - summary: |
+Не успешная фильтрация по рейтингу 
+requirement: |
+Empty
+prerequisites: |
+Открыта главна страница
+test-data: |
+https://hexlet-products-store.vercel.app/
+steps:
+- Empty
+expected-result: |
+Не реализована фильрация по рейтингу 
+- summary: |
 Поиск по категории
 requirement: |
 Выбрав категорию появляется товар данной категории
