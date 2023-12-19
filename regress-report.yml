@@ -1,73 +1,139 @@
-test-cases:
-  - summary: |
-      Открыть страницу https://hexlet-products-store.vercel.app/
-    status: pass
-  - summary: |
-      Форма поиска 
-    status: pass
-  - summary: |
-      Запрос на русском языке в форма поиска 
-    status: fail 
-  - summary: |
-      Фильтр цены
-    status: pass
-  - summary: |
-      Нерациональные числа 
-    status: pass
-  - summary: |
-      Вводим букв,символы и отрицательных значений в форму цены
-    status: pass
-  - summary: |
-      Вводим символы в форму цены
-    status: pass
-  - summary: |
-      Вводим отрицательных значений в форму цены
-    status: fail
-  - summary: |
-      Карточка товара 
-    status: pass
-  - summary: |
-      Хештег в карточке товара
-    status: pass
-  - summary: |
-      Поиск по категории  
-    status: pass
-  - summary: |
-      Ключивое слово+категория
-    status: pass
-  - summary: |
-      Поиск по производителю  
-    status: pass
-  - summary: |
-      Отображение товара которого нет в наличии  
-    status: fail
-  - summary: |
-      Перемещение по страницам 
-    status: pass
-  - summary: |
-      добавление товара 
-    status: pass
-  - summary: |
-      Страница корзины
-    status: pass
-  - summary: |
-      Оформление заказа с переходом на страницу оплаты
-    status: fail
-  - summary: |
-      Удалить товара 
-    status: pass
-  - summary: |
-      Удаление всего товара из корзины
-    status: pass
-  - summary: |
-      Продолжить выбирать товар в каталоге
-    status: pass
-  - summary: |
-      Перевод  страницы 
-    status: pass
-  - summary: |
-      Мобильная версия
-    status: pass   
+test-cases:   
+ - summary: |
+     Открыть страницу https://hexlet-products-store.vercel.app/
+   status: pass  
+  
+ - summary: |
+     Форма поиска 
+   status: pass 
+  
+ - summary: |
+     Запрос на русском языке в форма поиска 
+   status: fail 
+  
+ - summary: |
+     Фильтрация обычной по цене
+   status: pass
+  
+ - summary: |
+     Фильтрация по цене со скидкой
+   status: fail
+  
+ - summary: |
+     Иррациональные числа
+   status: pass  
+  
+ - summary: |
+     Вводим буквы в форму цены
+   status: pass  
+  
+ - summary: |
+     Вводим символы  в форму цены
+   status: pass 
+  
+ - summary: |
+     Вводим отрицательных значений в форму цены
+   status: fail 
+  
+ - summary: |
+     Карточка товара 
+   status: pass  
+  
+ - summary: |
+     Хештег в карточке товара
+   status: pass
+  
+ - summary: |
+     Не реализована фильтрация по рейтингу 
+   status: fail 
+  
+ - summary: |
+     Поиск по категории  
+   status: pass 
+  
+ - summary: |
+     Ключивое слово+категория
+   status: pass 
+  
+ - summary: |
+     Поиск по производителю  
+   status: fail 
+  
+ - summary: |
+     Отображение товара которого нет в наличии  
+   status: fail
+  
+ - summary: |
+     Перемещение по страницам 
+   status: pass 
+  
+ - summary: |
+     Добавление товара 
+   status: pass
+  
+ - summary: |
+     Страница корзины
+   status: pass 
+  
+ - summary: |
+     Оформление заказа с переходом на страницу оплаты
+   status: fail
+  
+ - summary: |
+     Удалить товара 
+   status: pass 
+  
+ - summary: |
+     Удаление всего товара из корзины
+   status: pass
+  
+ - summary: |
+     Продолжить выбор товара в каталоге
+   status: pass 
+  
+ - summary: |
+     Перевод главной страницы 
+   status: pass
+
+- summary: |
+     Перевод страницы с подробным описанием товара
+   status: pass
+
+- summary: |
+     Перевод страницы корзина
+   status: pass
+  
+- summary: |
+     Мобильная версия
+   status: pass
+
+- summary: |
+     Тестирование основных требований в браузере Opera
+   status: pass
+
+- summary: |
+     Тестирование основных требований в браузере Firefox
+   status: pass
+  
+- summary: |
+     Тестирование основных требований в браузере Google Microsoft Edge
+   status: pass
+
+- summary: |
+     Тестирование основных требований в браузере Google chrom
+   status: pass
      
-bugreports: []
-     
+bugreports: 
+     - summary: |
+         Не переводится страница с подробным описанием товаров 
+       environment: |
+         Google Chrome 120.0.6099.71 (Официальная сборка), (64 бит)
+         Windows 11 Pro  
+       steps-to-reproduce: |
+        1.Открыть главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+        2.Открыть карточку товара
+        3.Перевести страницу
+       expected-result: |
+         Страница переводится  
+       actual-result: |
+          Страница не переводится
