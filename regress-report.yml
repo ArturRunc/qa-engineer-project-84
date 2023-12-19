@@ -96,11 +96,11 @@ test-cases:
    status: pass
 
 - summary: |
-     Перевод страницы с подробным описанием товара
-   status: pass
+     Перевод карточки с подробным описанием товара
+   status: fail
 
 - summary: |
-     Перевод страницы корзина
+     Перевод корзина
    status: pass
   
 - summary: |
