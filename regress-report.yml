@@ -95,31 +95,31 @@ test-cases:
      Перевод главной страницы 
    status: pass
 
-- summary: |
+ - summary: |
      Перевод карточки с подробным описанием товара
    status: fail
 
-- summary: |
+ - summary: |
      Перевод корзина
    status: pass
   
-- summary: |
+ - summary: |
      Мобильная версия
    status: pass
 
-- summary: |
+ - summary: |
      Тестирование основных требований в браузере Opera
    status: pass
 
-- summary: |
+ - summary: |
      Тестирование основных требований в браузере Firefox
    status: pass
   
-- summary: |
+ - summary: |
      Тестирование основных требований в браузере Google Microsoft Edge
    status: pass
 
-- summary: |
+ - summary: |
      Тестирование основных требований в браузере Google chrom
    status: pass
      
