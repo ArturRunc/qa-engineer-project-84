@@ -99,17 +99,17 @@
   status: pass
 
 - summary: |
-   Тестирование основных требовоний в браузере Oper
+   Тестирование основных требований в браузере Opera
   status: pass
 
 - summary: |
-   Тестирование основных требовоний в браузере Firefox
+   Тестирование основных требований в браузере Firefox
   status: pass
   
 - summary: |
-   Тестирование основных требовоний в браузере Google Microsoft Edge
+   Тестирование основных требований в браузере Google Microsoft Edge
   status: pass
 
 - summary: |
-   Тестирование основных требовоний в браузере Google chrom
+   Тестирование основных требований в браузере Google chrom
   status: pass
